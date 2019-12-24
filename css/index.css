@@ -1,0 +1,227 @@
+body{
+    margin:0;
+    background-color:rgb(224, 222, 222);
+}
+p{
+    margin:0;
+    padding:0;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+header{
+    height:100px;
+    border:1px solid #ccc;
+    background:linear-gradient(to right,rgb(140, 204, 140),rgb(245, 169, 169),rgb(162, 215, 250));  
+}
+nav{
+    background-color:#fff;
+}
+nav div{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding:10px 20px;
+    display: none;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    padding:10px 20px;
+}
+nav ul .active{
+    border-bottom: 1px solid orangered;
+}
+
+/* >1000px的 */
+@media screen and (min-width:1000px){
+    section{
+        padding-top:30px;
+        display: flex;
+        justify-content:space-around;
+    }
+    section article div{
+        width:500px;
+        height:200px;
+        margin:20px 0;
+        background-color:rgb(151, 207, 233);
+    }
+    section aside div{
+        width:300px;
+        height:150px;
+        background-color:rgb(194, 108, 134);
+        margin:20px 0;
+    }  
+}
+
+/* 800px<  <=1000px */
+@media screen and (max-width:1000px) and (min-width:800px){
+    section{
+        padding-top:30px;
+        display: flex;
+        justify-content:space-around;
+    }
+    section article div{
+        width:400px;
+        height:200px;
+        margin:20px 0;
+        background-color:rgb(106, 187, 180);
+    }
+    section aside div{
+        width:200px;
+        height:150px;
+        background-color:rgb(150, 194, 108);
+        margin-top:20px;
+    } 
+
+    footer{
+        background-color:rgb(14, 13, 13);
+    }  
+    footer article{
+        display: flex;
+        justify-content: space-around;
+    }
+    footer article .art{
+        width:200px;
+        margin:20px 0;
+    }
+    footer article .art .new{
+        font-size:18px;
+        color:#fff;
+        border-bottom: 1px solid rgb(151, 67, 67);
+    }
+    footer article .art .cont{
+        margin-top:0;
+        padding:20px 0;
+        border-bottom: 1px dotted rgb(238, 237, 237);
+    }
+    footer article .art .cont p{
+        font-size:14px;
+        color:#fff;
+        padding:5px 0;
+    }
+    footer article .art .cont span{
+        font-size:12px;
+        color:#ccc;
+    }
+}
+
+/* <=800px */
+@media screen and (max-width:800px){
+    nav ul{
+        display: none;
+    }
+    nav div{
+        display: block;
+    }
+    section{
+        padding-top:30px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    section article div{
+        width:650px;
+        height:200px;
+        margin:20px 0;
+        background-color:rgb(131, 182, 84);
+    }
+    section aside div{
+        width:650px;
+        height:150px;
+        background-color:rgb(233, 62, 62);
+        margin:20px 0;
+    } 
+    footer{
+        background-color:rgb(14, 13, 13);
+    }  
+    footer article{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    footer article .art{
+        width:300px;
+        margin:20px 0;
+    }
+    footer article .art .new{
+        font-size:18px;
+        color:#fff;
+        border-bottom: 1px solid rgb(151, 67, 67);
+    }
+    footer article .art .cont{
+        margin-top:0;
+        padding:20px 0;
+        border-bottom: 1px dotted rgb(238, 237, 237);
+    }
+    footer article .art .cont p{
+        font-size:14px;
+        color:#fff;
+        padding:5px 0;
+    }
+    footer article .art .cont span{
+        font-size:12px;
+        color:#ccc;
+    }   
+}
+
+section article .page{
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    background-color:transparent;
+}
+section article .page .page-first{
+    width:150px;
+    height:20px;
+}
+section article .page .page-right{
+    width:30px;
+    height:20px;
+}
+section article .page .page-first,
+section article .page .page-right{
+    padding:10px;
+    color:#fff;
+    margin-left:10px;
+    background-color:orangered;
+    text-align: center;
+    font-size:14px;
+}
+footer{
+    background-color:rgb(14, 13, 13);
+}  
+footer article{
+    display: flex;
+    justify-content: space-around;
+}
+footer article .art{
+    width:300px;
+    margin:20px 0;
+}
+footer article .art .new{
+    font-size:18px;
+    color:#fff;
+    border-bottom: 1px solid rgb(151, 67, 67);
+}
+footer article .art .cont{
+    margin-top:0;
+    padding:20px 0;
+    border-bottom: 1px dotted rgb(238, 237, 237);
+}
+footer article .art .cont p{
+    font-size:14px;
+    color:#fff;
+    padding:5px 0;
+}
+footer article .art .cont span{
+    font-size:12px;
+    color:#ccc;
+}
